@@ -1,4 +1,4 @@
-### Basic blinky example for STM32F103C8T6 board
+# Blinky Example for STM32F103C8T6 board
 
 ### Run
 
@@ -9,6 +9,7 @@ cargo flash --release --chip STM32F103C8
 ```
 
 > I'm using ST-Link V2 to flash the board via [cargo-flash](https://crates.io/crates/cargo-flash).
+
 > The example alternates the pin PB12 and PC13 (Built In Led) to blink the LED.
 
 <details>
@@ -33,7 +34,6 @@ The info from `.cargo/config.toml` was found via:
 - The [cortex-m-rt](https://docs.rs/cortex-m-rt/latest/cortex_m_rt) create docs also goes in depth of what
   the `memory.x` is and the `Tlink.x` linker script.
 
-Code for this board has to be written without std since
+Code for this board has to be written without `std` since
 the [rust docs](https://doc.rust-lang.org/nightly/rustc/platform-support.html#tier-2) states that `thumbv7m-none-eabi`
 target does not support `std`
-
