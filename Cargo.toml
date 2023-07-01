@@ -3,4 +3,4 @@ opt-level = 'z'
 lto = true
 
 [workspace]
-members = ["sensors/blinky", "sensors/push-button"]
+members = ["sensors/blinky", "sensors/push-button", "sensors/smd-rgb-led"]

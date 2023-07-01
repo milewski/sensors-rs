@@ -1,0 +1,11 @@
+[package]
+name = "smd-rgb-led"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "^0.7.7"
+cortex-m-rt = "^0.7.3"
+panic-halt = "^0.2.0"
+stm32f1xx-hal = { version = "^0.10.0", features = ["stm32f103", "rt", "medium"] }
+micromath = "^2.0.0"
