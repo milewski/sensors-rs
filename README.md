@@ -1,4 +1,4 @@
-# Blinky Example for STM32F103C8T6 board
+# Blinky example for STM32F103C8T6 board
 
 ### Run
 
@@ -8,20 +8,20 @@ Run the project via:
 cargo flash --release --chip STM32F103C8
 ```
 
-> I'm using ST-Link V2 to flash the board via [cargo-flash](https://crates.io/crates/cargo-flash).
+> I'm using [cargo-flash](https://crates.io/crates/cargo-flash) to flash the board via an ST-Link V2 device.
 
 > The example alternates the pin PB12 and PC13 (Built In Led) to blink the LED.
 
 <details>
   <summary>Pinout Diagram</summary>
 
-  ![STM32F103C8T6-pinout](https://github.com/milewski/sensors-rs/assets/2874967/5f8e234f-2ba5-4521-be23-5e59b7b1993f)
+![STM32F103C8T6-pinout](https://github.com/milewski/sensors-rs/assets/2874967/5f8e234f-2ba5-4521-be23-5e59b7b1993f)
 </details>
 
 <details>
   <summary>Demo Video</summary>
 
-  https://github.com/milewski/sensors-rs/assets/2874967/d183bf96-bd44-4637-8eae-6012b72fdfa3
+https://github.com/milewski/sensors-rs/assets/2874967/d183bf96-bd44-4637-8eae-6012b72fdfa3
 </details>
 
 The info from `.cargo/config.toml` was found via:
