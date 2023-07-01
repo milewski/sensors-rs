@@ -1,0 +1,24 @@
+[package]
+name = "sensors-rs"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 'z' # turn on maximum optimizations. We only have 64kB
+lto = true      # Link-time-optimizations for further size reduction
+
+[dependencies]
+cortex-m = "^0.7.7"
+cortex-m-rt = "^0.7.3"
+panic-halt = "^0.2.0"
+stm32f1xx-hal = { version = "^0.10.0", features = ["stm32f103", "rt", "medium"] }
+#cortex-m = "^0.7.7"      # Access to the generic ARM peripherals
+#cortex-m-rt = "^0.7.3"  # Startup code for the ARM Core
+#embedded-hal = "^0.2.7"  # Access to generic embedded functions (`set_high`)
+#panic-halt = "^0.2.0"    # Panic handler
+#
+## Access to the stm32f103 HAL.
+#[dependencies.stm32f1xx-hal]
+## Bluepill contains a 64kB flash variant which is called "medium density"
+#features = ["stm32f103", "rt", "medium"]
+#version = "^0.6.1"
