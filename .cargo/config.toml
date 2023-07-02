@@ -1,3 +1,12 @@
+[target.thumbv7m-none-eabi]
+runner = 'probe-run --chip STM32F103C8'
+rustflags = [
+    "-C", "link-arg=-Tlink.x", "-g",
+    "-C", "link-arg=-Tdefmt.x",
+]
+
 [build]
 target = "thumbv7m-none-eabi"
-rustflags = [ "-C", "link-arg=-Tlink.x"]
+
+[env]
+DEFMT_LOG = "info"
