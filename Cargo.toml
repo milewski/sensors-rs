@@ -5,5 +5,5 @@ lto = true
 [workspace]
 resolver = "2"
 members = [
-    "sensors/*",
+    "stm32/*",
 ]
