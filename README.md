@@ -7,5 +7,5 @@ My personal walk through learning Rust development on STM32F103C8T6 microcontrol
 <details>
   <summary>Pinout Diagram</summary>
 
-![STM32F103C8T6-pinout](https://github.com/milewski/sensors-rs/assets/2874967/5f8e234f-2ba5-4521-be23-5e59b7b1993f)
+![STM32F103C8T6-pinout](./attachments/STM32F103C8T6-pinout.png)
 </details>

@@ -4,8 +4,10 @@
 
 use cortex_m::{delay::Delay, Peripherals as CortexPeripherals};
 use cortex_m_rt::entry;
-use panic_halt;
 use stm32f1xx_hal::{pac::Peripherals as DevicePeripherals, prelude::*, time::Hertz};
+
+use defmt_rtt as _;
+use panic_probe as _;
 
 #[entry]
 fn main() -> ! {

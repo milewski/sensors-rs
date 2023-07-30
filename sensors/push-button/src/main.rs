@@ -5,6 +5,7 @@
 use cortex_m_rt::entry;
 use panic_halt;
 use stm32f1xx_hal::{pac::Peripherals as DevicePeripherals, prelude::*};
+use stm32f1xx_hal::i2c::I2c;
 
 #[entry]
 fn main() -> ! {

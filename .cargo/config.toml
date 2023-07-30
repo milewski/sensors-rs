@@ -8,5 +8,8 @@ rustflags = [
 [build]
 target = "thumbv7m-none-eabi"
 
+[alias]
+deploy = "flash --chip STM32F103C8"
+
 [env]
 DEFMT_LOG = "info"
